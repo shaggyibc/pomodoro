@@ -42,20 +42,20 @@ def start_timer():
         what_we_do.config(text="Break", fg=RED)
         short_break_seconds = SHORT_BREAK_MIN * 60
         count_down(short_break_seconds)
-        for x in range(1, 4):
+        for x in range(1, 3):
             winsound.Beep(1000, 1000)
     elif reps == 8:
         what_we_do.config(text="Break", fg=PINK)
         long_break_seconds = LONG_BREAK_MIN * 60
         count_down(long_break_seconds)
-        for x in range(1, 4):
+        for x in range(1, 3):
             winsound.Beep(1000, 1000)
         # reset_timer()
     else:
         what_we_do.config(text="Work", fg=GREEN)
         work_seconds = WORK_MIN * 60
         count_down(work_seconds)
-        for x in range(1, 4):
+        for x in range(1, 3):
             winsound.Beep(1000, 1000)
 
 
